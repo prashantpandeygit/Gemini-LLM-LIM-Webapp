@@ -61,7 +61,6 @@ if uploaded_file is not None:
 
     if submit_image:
         response = get_gemini_flash_response(image)
-        st.subheader("Response:")
         st.write(response)
 elif submit_image:
     st.warning("Please upload an image before generating a response.")
